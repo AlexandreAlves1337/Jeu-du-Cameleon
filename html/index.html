@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+<div id="contenant"></div>
+<img id="personnage" src="img/cameleonModifier.png">
+<img id="mouche" src="img/finish.png">
+<div id="control">
+    <button onclick="droite()" id="droite"> Droite</button>
+    <button onclick="gauche();" id="gauche"> Gauche</button>
+    <button onclick="haut();" id="avancer"> Haut</button>
+    <button onclick="bas();" id="reculer">Bas</button>
+    <button onclick="changeColor('yellow');">Jaune</button>
+    <button onclick="changeColor('blue');">Bleu</button>
+</div>
+<button onclick="tester(0);" id="submit">Soumettre</button>
+
+<section id="medailles">
+    <div>Médailles d'Or =<span id="or"></span></div>
+    <div>Médailles d'Argent =<span id="argent"></span> </div>
+    <div>Médailles de Bronze =<span id="bronze"></span></div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/mapRemy.js"></script>
+</body>
+</html>
